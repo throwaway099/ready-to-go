@@ -77,9 +77,9 @@ function ScrollAtmosphere() {
       const max = document.documentElement.scrollHeight - window.innerHeight;
       const p = max > 0 ? Math.min(1, window.scrollY / max) : 0;
       let i = 0;
-      while (i < stops.length - 2 && p > stops[i + 1][0]) i++;
-      const [p0, c0] = stops[i];
-      const [p1, c1] = stops[i + 1];
+      while (i < stops.length - 2 && p > stops[i + 1]![0]) i++;
+      const [p0, c0] = stops[i]!;
+      const [p1, c1] = stops[i + 1]!;
       const t = Math.min(1, Math.max(0, (p - p0) / (p1 - p0)));
       const r = Math.round(lerp(c0[0], c1[0], t));
       const g = Math.round(lerp(c0[1], c1[1], t));
