@@ -47,20 +47,22 @@ function Constellations() {
         if (n.y < 0 || n.y > h) n.vy *= -1;
       }
       for (let i = 0; i < nodes.length; i++) {
+        const a = nodes[i]!;
         for (let j = i + 1; j < nodes.length; j++) {
-          const dx = nodes[i].x - nodes[j].x;
-          const dy = nodes[i].y - nodes[j].y;
+          const b = nodes[j]!;
+          const dx = a.x - b.x;
+          const dy = a.y - b.y;
           const d = Math.hypot(dx, dy);
           if (d < 130) {
             ctx.beginPath();
-            ctx.moveTo(nodes[i].x, nodes[i].y);
-            ctx.lineTo(nodes[j].x, nodes[j].y);
+            ctx.moveTo(a.x, a.y);
+            ctx.lineTo(b.x, b.y);
             ctx.strokeStyle = `rgba(150,185,255,${(0.14 * (1 - d / 130)).toFixed(3)})`;
             ctx.stroke();
           }
         }
         ctx.beginPath();
-        ctx.arc(nodes[i].x, nodes[i].y, 1.4, 0, Math.PI * 2);
+        ctx.arc(a.x, a.y, 1.4, 0, Math.PI * 2);
         ctx.fillStyle = "rgba(200,220,255,0.5)";
         ctx.fill();
       }
