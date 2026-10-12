@@ -83,7 +83,7 @@ export function OrbCursor() {
       }
       tctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
       for (let i = particles.length - 1; i >= 0; i--) {
-        const p = particles[i];
+        const p = particles[i]!;
         p.life -= 0.035;
         if (p.life <= 0) {
           particles.splice(i, 1);

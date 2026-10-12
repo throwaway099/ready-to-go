@@ -19,14 +19,14 @@ function RotatingTitle() {
     <div className="relative h-8 overflow-hidden md:h-10">
       <AnimatePresence mode="wait">
         <motion.span
-          key={heroTitles[index]}
+          key={heroTitles[index]!}
           initial={{ y: 32, opacity: 0, filter: "blur(6px)" }}
           animate={{ y: 0, opacity: 1, filter: "blur(0px)" }}
           exit={{ y: -32, opacity: 0, filter: "blur(6px)" }}
           transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
           className="absolute inset-x-0 text-center font-mono text-lg tracking-[0.25em] text-stellar md:text-xl"
         >
-          {heroTitles[index].toUpperCase()}
+          {heroTitles[index]!.toUpperCase()}
         </motion.span>
       </AnimatePresence>
     </div>

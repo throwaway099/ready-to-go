@@ -32,6 +32,7 @@ export const heroTitles = [
 ];
 
 export const about = {
+  quote: profile.quote,
   bio: [
     "I'm an engineer who loves building intelligent systems — from training machine-learning models to shipping polished full-stack products.",
     "I care about the details: clean architecture, smooth interactions, and software that feels alive. When I'm not coding, I'm exploring new research, contributing to open source, or sketching ideas for the next thing to build.",
