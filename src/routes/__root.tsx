@@ -78,7 +78,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { name: "author", content: "Portfolio" },
+      { name: "author", content: "Dhruv Parashar" },
+      { property: "og:site_name", content: "Dhruv Parashar" },
     ],
     links: [
       {
