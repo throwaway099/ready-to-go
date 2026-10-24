@@ -4,7 +4,7 @@
  */
 
 export const profile = {
-  name: "Your Name",
+  name: "Dhruv Parashar",
   tagline: "AI Engineer | Full Stack Developer | ML Enthusiast",
   email: "you@example.com",
   phone: "+91 00000 00000",
@@ -50,7 +50,7 @@ export const about = {
     "Open-source contributor to AI tooling projects",
   ],
   education: {
-    college: "Your College Name",
+    college: "JECRC University",
     degree: "B.Tech — Computer Science & Engineering",
     year: "2022 — 2026",
     cgpa: "8.5 / 10",

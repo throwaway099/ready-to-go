@@ -15,7 +15,7 @@ import { Contact } from "@/components/sections/Contact";
 import { Footer } from "@/components/sections/Footer";
 import { profile } from "@/data/portfolio";
 
-const title = `${profile.name} — ${profile.tagline}`;
+const title = profile.name;
 const description = `Portfolio of ${profile.name}: ${profile.tagline}. Projects, skills, experience and contact — a cinematic deep-space experience.`;
 
 export const Route = createFileRoute("/")({
